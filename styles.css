@@ -1,0 +1,145 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    padding: 20px;
+}
+
+.project-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-list li {
+    margin-bottom: 10px;
+}
+
+.project-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+}
+
+.project-list a:hover {
+    text-decoration: underline;
+}
+
+.project-description {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.project-description h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.project-description p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.view-project {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-project a {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.view-project a:hover {
+    background-color: #0056b3;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+#welcome-section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+#welcome-section h1 {
+    font-size: 2.5em;
+}
+
+#projects {
+    padding: 60px 20px; /* Add padding to account for fixed navbar */
+}
+
+.project-tile {
+    margin-bottom: 20px;
+}
+
+.project-tile a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.project-tile a:hover {
+    text-decoration: underline;
+}
+.view-project {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar a {
+        margin: 5px 0;
+    }
+
+    #welcome-section h1 {
+        font-size: 2em;
+    }
+}
